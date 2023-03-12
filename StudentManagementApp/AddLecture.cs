@@ -1,14 +1,6 @@
 ﻿using StudentManagementApp.Models;
 using StudentManagementApp.Repositories;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace StudentManagementApp
 {
@@ -44,7 +36,8 @@ namespace StudentManagementApp
                 _lectureRepository.AddLecture(name, selectedDepartments);
                 MessageBox.Show("Lecture added!");
                 Close();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show($"Error during lecture save. Exception: {ex.Message}");
             }

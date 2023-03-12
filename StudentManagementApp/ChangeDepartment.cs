@@ -1,14 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using StudentManagementApp.Repositories;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace StudentManagementApp
 {
@@ -52,7 +43,8 @@ namespace StudentManagementApp
                 studentRepository.ChangeDeparment(studentId, selectedDepartment);
                 MessageBox.Show("Department changed!");
                 Close();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show($"Error during deparment change. Exception: {ex.Message}");
             }

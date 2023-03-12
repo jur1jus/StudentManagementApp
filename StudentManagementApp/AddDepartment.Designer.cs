@@ -77,7 +77,7 @@
             this.listBoxLectures.Location = new System.Drawing.Point(179, 35);
             this.listBoxLectures.Name = "listBoxLectures";
             this.listBoxLectures.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBoxLectures.Size = new System.Drawing.Size(120, 94);
+            this.listBoxLectures.Size = new System.Drawing.Size(120, 274);
             this.listBoxLectures.TabIndex = 5;
             // 
             // AddDepartment

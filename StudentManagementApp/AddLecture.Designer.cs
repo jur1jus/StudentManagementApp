@@ -58,7 +58,7 @@
             this.listBoxDepartments.Location = new System.Drawing.Point(94, 35);
             this.listBoxDepartments.Name = "listBoxDepartments";
             this.listBoxDepartments.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBoxDepartments.Size = new System.Drawing.Size(170, 94);
+            this.listBoxDepartments.Size = new System.Drawing.Size(170, 169);
             this.listBoxDepartments.TabIndex = 2;
             // 
             // label2
