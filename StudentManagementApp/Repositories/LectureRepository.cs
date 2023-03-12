@@ -39,7 +39,7 @@ namespace StudentManagementApp.Repositories
         {
             var result = new List<string>();
 
-            var query = "SELECT Lectures.Name FROM DepartmentLectures " +
+            var query = "SELECT Lectures.Name FROM DepartmentLectures" +
                 "INNER JOIN Lectures ON DepartmentLectures.LectureId = Lectures.Id " +
                 "WHERE DepartmentId = @departmentId";
 
@@ -62,7 +62,7 @@ namespace StudentManagementApp.Repositories
 
         public void AddLecture(string name, IEnumerable<int> deparmentIds)
         {
-            var addLectureCommand = "INSERT INTO Lectures (Name) VALUES (@Name)";
+            var addLectureCommand = "INSERT INTO Lectures (Name) VALUES (@Name); SELECT last_insert_rowid()";
             var addDepartmentsCommand = "INSERT OR IGNORE INTO DepartmentLectures (DepartmentId, LectureId) VALUES (@DepartmentId, @LectureId)";
 
             using (var sqliteConnection = new SQLiteConnection(_connectionString))
