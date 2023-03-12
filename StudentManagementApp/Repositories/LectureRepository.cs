@@ -39,7 +39,7 @@ namespace StudentManagementApp.Repositories
         {
             var result = new List<string>();
 
-            var query = "SELECT Lectures.Name FROM DepartmentLectures" +
+            var query = "SELECT Lectures.Name FROM DepartmentLectures " +
                 "INNER JOIN Lectures ON DepartmentLectures.LectureId = Lectures.Id " +
                 "WHERE DepartmentId = @departmentId";
 
